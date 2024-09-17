@@ -23,7 +23,7 @@ const authcontroller = {
                     msg : "username all ready exist"
                 });
             }
-            const newUser = await User.create({ username, password });
+             await User.create({ username, password });
             return res.status(200).json({
                 msg : "new user created successfully !!"
             })
